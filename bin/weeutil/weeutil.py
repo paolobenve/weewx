@@ -1150,8 +1150,9 @@ def to_float(x):
         x = None
     return float(x) if x is not None else None
 
-def to_unicode(string, encoding='utf8'):
-    """Convert to Unicode, unless string is None
+def to_unicode(obj, encoding='utf8'):
+    """Convert to Unicode, unless the object is None. Can handle strings, and subclasses
+    of lists and dicts.
     
     Example:
     >>> print to_unicode("degree sign from UTF8: \xc2\xb0")
@@ -1160,12 +1161,26 @@ def to_unicode(string, encoding='utf8'):
     degree sign from Unicode: °
     >>> print to_unicode(None)
     None
+    >>> for x in to_unicode(["\xc2\xb0", None, "\xc3\x85"]):
+    ...     print x
+    °
+    None
+    Å
+    >>> for x in to_unicode({'a':"\xc2\xb0", 'b':"\xc3\x85"}).values():
+    ...     print x
+    °
+    Å
     """
-    try:
-        return unicode(string, encoding) if string is not None else None
-    except TypeError:
-        # The string is already in Unicode. Just return it.
-        return string
+    if obj is None:
+        return None
+    elif issubclass(type(obj), unicode):
+        return obj
+    elif issubclass(type(obj), str):
+        return unicode(obj, encoding)
+    elif issubclass(type(obj), list):
+        return obj.__class__(to_unicode(v, encoding) for v in obj)
+    elif issubclass(type(obj), dict):
+        return obj.__class__((k, to_unicode(v, encoding)) for k, v in obj.items())
 
 def min_with_none(x_seq):
     """Find the minimum in a (possibly empty) sequence, ignoring Nones"""
