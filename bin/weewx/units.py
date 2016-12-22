@@ -298,116 +298,116 @@ conversionDict = {
       'mile'             : {'km'               : lambda x : x * 1.609344}}
 
 # Default unit formatting when nothing specified in skin configuration file
-default_unit_format_dict = {"amp"                : "%.1f",
-                            "bit"                : "%.0f",
-                            "byte"               : "%.0f",
-                            "centibar"           : "%.0f",
-                            "cm"                 : "%.2f",
-                            "cm_per_hour"        : "%.2f",
-                            "cubic_foot"         : "%.1f",
-                            "day"                : "%.1f",
-                            "degree_C"           : "%.1f",
-                            "degree_C_day"       : "%.1f",
-                            "degree_F"           : "%.1f",
-                            "degree_F_day"       : "%.1f",
-                            "degree_compass"     : "%.0f",
-                            "foot"               : "%.0f",
-                            "gallon"             : "%.1f",
-                            "hPa"                : "%.1f",
-                            "hour"               : "%.1f",
-                            "inHg"               : "%.3f",
-                            "inch"               : "%.2f",
-                            "inch_per_hour"      : "%.2f",
-                            "km"                 : "%.1f",
-                            "km_per_hour"        : "%.0f",
-                            "km_per_hour2"       : "%.1f",
-                            "knot"               : "%.0f",
-                            "knot2"              : "%.1f",
-                            "litre"              : "%.1f",
-                            "mbar"               : "%.1f",
-                            "meter"              : "%.0f",
-                            "meter_per_second"   : "%.0f",
-                            "meter_per_second2"  : "%.1f",
-                            "mile"               : "%.1f",
-                            "mile_per_hour"      : "%.0f",
-                            "mile_per_hour2"     : "%.1f",
-                            "mm"                 : "%.1f",
-                            "mmHg"               : "%.1f",
-                            "mm_per_hour"        : "%.1f",
-                            "percent"            : "%.0f",
-                            "second"             : "%.0f",
-                            "uv_index"           : "%.1f",
-                            "volt"               : "%.1f",
-                            "watt"               : "%.1f",
-                            "watt_hour"          : "%.1f",
-                            "watt_per_meter_squared" : "%.0f",
-                            "NONE"              : "   N/A"}
+default_unit_format_dict = {"amp"                : u"%.1f",
+                            "bit"                : u"%.0f",
+                            "byte"               : u"%.0f",
+                            "centibar"           : u"%.0f",
+                            "cm"                 : u"%.2f",
+                            "cm_per_hour"        : u"%.2f",
+                            "cubic_foot"         : u"%.1f",
+                            "day"                : u"%.1f",
+                            "degree_C"           : u"%.1f",
+                            "degree_C_day"       : u"%.1f",
+                            "degree_F"           : u"%.1f",
+                            "degree_F_day"       : u"%.1f",
+                            "degree_compass"     : u"%.0f",
+                            "foot"               : u"%.0f",
+                            "gallon"             : u"%.1f",
+                            "hPa"                : u"%.1f",
+                            "hour"               : u"%.1f",
+                            "inHg"               : u"%.3f",
+                            "inch"               : u"%.2f",
+                            "inch_per_hour"      : u"%.2f",
+                            "km"                 : u"%.1f",
+                            "km_per_hour"        : u"%.0f",
+                            "km_per_hour2"       : u"%.1f",
+                            "knot"               : u"%.0f",
+                            "knot2"              : u"%.1f",
+                            "litre"              : u"%.1f",
+                            "mbar"               : u"%.1f",
+                            "meter"              : u"%.0f",
+                            "meter_per_second"   : u"%.0f",
+                            "meter_per_second2"  : u"%.1f",
+                            "mile"               : u"%.1f",
+                            "mile_per_hour"      : u"%.0f",
+                            "mile_per_hour2"     : u"%.1f",
+                            "mm"                 : u"%.1f",
+                            "mmHg"               : u"%.1f",
+                            "mm_per_hour"        : u"%.1f",
+                            "percent"            : u"%.0f",
+                            "second"             : u"%.0f",
+                            "uv_index"           : u"%.1f",
+                            "volt"               : u"%.1f",
+                            "watt"               : u"%.1f",
+                            "watt_hour"          : u"%.1f",
+                            "watt_per_meter_squared" : u"%.0f",
+                            "NONE"              : u"   N/A"}
 
 # Default unit labels to be used in the absence of a skin configuration file
-default_unit_label_dict = { "amp"               : " amp",
-                            "bit"               : " b",
-                            "byte"              : " B",
-                            "centibar"          : " cb",
-                            "cm"                : " cm",
-                            "cm_per_hour"       : " cm/hr",
-                            "cubic_foot"        : " ft\xc2\xb3",
-                            "day"               : (" day", " days"),
-                            "degree_C"          : "\xc2\xb0C",
-                            "degree_C_day"      : "\xc2\xb0C-day",
-                            "degree_F"          : "\xc2\xb0F",
-                            "degree_F_day"      : "\xc2\xb0F-day",
-                            "degree_compass"    : "\xc2\xb0",
-                            "foot"              : " feet",
-                            "gallon"            : " gal",
-                            "hPa"               : " hPa",
-                            "inHg"              : " inHg",
-                            "hour"              : (" hour", " hours"),
-                            "inch"              : " in",
-                            "inch_per_hour"     : " in/hr",
-                            "km"                : " km",
-                            "km_per_hour"       : " kph",
-                            "km_per_hour2"      : " kph",
-                            "knot"              : " knots",
-                            "knot2"             : " knots",
-                            "litre"             : " l",
-                            "mbar"              : " mbar",
-                            "meter"             : " meters",
-                            "meter_per_second"  : " m/s",
-                            "meter_per_second2" : " m/s",
-                            "mile"              : " mile",
-                            "mile_per_hour"     : " mph",
-                            "mile_per_hour2"    : " mph",
-                            "minute"            : (" minute", " minutes"),
-                            "mm"                : " mm",
-                            "mmHg"              : " mmHg",
-                            "mm_per_hour"       : " mm/hr",
-                            "percent"           : "%",
-                            "second"            : (" second", " seconds"),
-                            "uv_index"          : "",
-                            "volt"              : " V",
-                            "watt"              : " W",
-                            "watt_hour"         : " Wh",
-                            "watt_per_meter_squared" : " W/m\xc2\xb2",
-                            "NONE"              : "" }
+default_unit_label_dict = { "amp"               : u" amp",
+                            "bit"               : u" b",
+                            "byte"              : u" B",
+                            "centibar"          : u" cb",
+                            "cm"                : u" cm",
+                            "cm_per_hour"       : u" cm/hr",
+                            "cubic_foot"        : u" ft\u00b3",
+                            "day"               : (u" day", u" days"),
+                            "degree_C"          : u"\u00b0C",
+                            "degree_C_day"      : u"\u00b0C-day",
+                            "degree_F"          : u"\u00b0F",
+                            "degree_F_day"      : u"\u00b0F-day",
+                            "degree_compass"    : u"\u00b0",
+                            "foot"              : u" feet",
+                            "gallon"            : u" gal",
+                            "hPa"               : u" hPa",
+                            "inHg"              : u" inHg",
+                            "hour"              : (u" hour", u" hours"),
+                            "inch"              : u" in",
+                            "inch_per_hour"     : u" in/hr",
+                            "km"                : u" km",
+                            "km_per_hour"       : u" kph",
+                            "km_per_hour2"      : u" kph",
+                            "knot"              : u" knots",
+                            "knot2"             : u" knots",
+                            "litre"             : u" l",
+                            "mbar"              : u" mbar",
+                            "meter"             : u" meters",
+                            "meter_per_second"  : u" m/s",
+                            "meter_per_second2" : u" m/s",
+                            "mile"              : u" mile",
+                            "mile_per_hour"     : u" mph",
+                            "mile_per_hour2"    : u" mph",
+                            "minute"            : (u" minute", u" minutes"),
+                            "mm"                : u" mm",
+                            "mmHg"              : u" mmHg",
+                            "mm_per_hour"       : u" mm/hr",
+                            "percent"           : u"%",
+                            "second"            : (u" second", u" seconds"),
+                            "uv_index"          : u"",
+                            "volt"              : u" V",
+                            "watt"              : u" W",
+                            "watt_hour"         : u" Wh",
+                            "watt_per_meter_squared" : u" W/m\u00b2",
+                            "NONE"              : u"" }
 
 # Default strftime formatting to be used in the absence of a skin
 # configuration file. The entry for delta_time uses a special
 # encoding.
-default_time_format_dict = {"day"        : "%H:%M",
-                            "week"       : "%H:%M on %A",
-                            "month"      : "%d-%b-%Y %H:%M",
-                            "year"       : "%d-%b-%Y %H:%M",
-                            "rainyear"   : "%d-%b-%Y %H:%M",
-                            "current"    : "%d-%b-%Y %H:%M",
-                            "ephem_day"  : "%H:%M",
-                            "ephem_year" : "%d-%b-%Y %H:%M",
-                            "delta_time" : "%(day)d%(day_label)s, %(hour)d%(hour_label)s, "\
-                                           "%(minute)d%(minute_label)s"}
+default_time_format_dict = {"day"        : u"%H:%M",
+                            "week"       : u"%H:%M on %A",
+                            "month"      : u"%d-%b-%Y %H:%M",
+                            "year"       : u"%d-%b-%Y %H:%M",
+                            "rainyear"   : u"%d-%b-%Y %H:%M",
+                            "current"    : u"%d-%b-%Y %H:%M",
+                            "ephem_day"  : u"%H:%M",
+                            "ephem_year" : u"%d-%b-%Y %H:%M",
+                            "delta_time" : u"%(day)d%(day_label)s, %(hour)d%(hour_label)s, "\
+                                           u"%(minute)d%(minute_label)s"}
 
 # Default mapping from compass degrees to ordinals
-default_ordinate_names = ['N', 'NNE','NE', 'ENE', 'E', 'ESE', 'SE', 'SSE',
-                          'S', 'SSW','SW', 'WSW', 'W', 'WNW', 'NW', 'NNW',
-                          'N/A']
+default_ordinate_names = [u'N', u'NNE', u'NE', u'ENE', u'E', u'ESE', u'SE', u'SSE',
+                          u'S', u'SSW', u'SW', u'WSW', u'W', u'WNW', u'NW', u'NNW',
+                          u'N/A']
 
 #==============================================================================
 #                        class ValueTuple
@@ -594,7 +594,7 @@ class Formatter(object):
     def toString(self, val_t, context='current', addLabel=True, 
                  useThisFormat=None, NONE_string=None, 
                  localize=True):
-        """Format the value as a string.
+        """Format the value, returning it as a utf8 string.
         
         val_t: The value to be formatted as a value tuple. 
         
@@ -614,11 +614,13 @@ class Formatter(object):
         
         localize: True to localize the results. False otherwise
         """
+        this code is not done. 
         if val_t is None or val_t[0] is None:
             if NONE_string is not None: 
-                return NONE_string
+                val_str = NONE_string
             else:
-                return self.unit_format_dict.get('NONE', 'N/A')
+                val_str = self.unit_format_dict.get('NONE', u'N/A')
+            addLabel = False
             
         if val_t[1] == "unix_epoch":
             # Different formatting routines are used if the value is a time.
@@ -656,7 +658,9 @@ class Formatter(object):
         if addLabel:
             val_str += self.get_label_string(val_t[1], plural=(not val_t[0]==1))
 
-        return val_str
+        # Finally, convert to a utf8 string
+        val_encoded = val_str.encode('utf8')
+        return val_encoded
 
     def to_ordinal_compass(self, val_t):
         if val_t[0] is None:
